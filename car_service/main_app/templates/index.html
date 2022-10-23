@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 {% load static %}
 
 <html lang="ru">
@@ -23,10 +23,10 @@
 
   <body>
     <nav
-      class="bg-white p-2 shadow-md md:flex md:items-center md:justify-between"
+      class="bg-gray-800 p-2 shadow-md md:flex md:items-center md:justify-between"
     >
       <div class="flex justify-between items-center">
-        <span class="text-2xl">
+        <span class="text-2xl text-white">
           <img class="h-10 inline" src="{% static 'img/logo_bar.png' %}" />
           Garage Service
         </span>
@@ -37,7 +37,7 @@
         </span>
       </div>
       <ul
-        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-800 text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-4 my-6 md:my-0">
           <a
@@ -76,6 +76,132 @@
         </li>
       </ul>
     </nav>
+    <div class="flex flex-wrap">
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/diagnostics.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">Диагностика</h3>
+
+            <p class="mt-1 text-xs text-gray-300">
+              Компьютерная диагностика, считывание кодов неисправностей и сброс
+              ошибок. Диагностика подвески и тормозных систем. Комплексная
+              проверка автомобиля.
+            </p>
+            <!-- <div class="mt-4 inline-block border-b border-blue-500 pb-1 font-medium text-white">
+              Подробнее
+              <span aria-hidden="true">→</span>
+            </div> -->
+          </div>
+        </a>
+      </div>
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/TO.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">Техническое обслуживание</h3>
+
+            <p class="mt-1 text-xs text-gray-300">
+              Замена масла и масляного фильтра, замена воздушного фильтра,
+              проверка состояния и уровня технических жидкостей,
+              работоспособности световых приборов. Регулярное прохождение
+              технического обслуживания (не реже, чем через каждые 10000 км
+              пробега) предупреждает выход из строя основных узлов автомобиля и
+              повышает уровень безопасности при его эксплуатации.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/engine.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">Ремонт двигателя</h3>
+
+            <p class="mt-1 text-xs text-gray-300">
+              Демонтаж силовых агрегатов, разборка и технический ремонт
+              двигателей, замена изношенных деталей. Ремонт топливной системы.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/grm.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">Замена навесного оборудования</h3>
+
+            <p class="mt-1 text-xs text-gray-300">
+              Замена ремней навесного оборудования процедура по регламенту
+              проводимая редко. Стандартно, к ремням навесного оборудования
+              относят ремень генератора, ГУРа, кондиционера и ролики. Скрытые, и
+              тем более, явные проблемы, могут привести к дорогостоящему ремонту
+              двигателя.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/suspension.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">
+              Ремонт подвески и тормозной системы
+            </h3>
+            <p class="mt-1 text-xs text-gray-300">
+              Замена сайлентблоков, шаровых опор, пружин, амортизаторов, опорных
+              подшипников, стабилизаторов, стоек, втулок стабилизаторов и т.д.
+              Замена колодок, тормозных шлангов и цилиндров, прокачка тормозов,
+              сварочные работы.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="max-w-md mx-auto p-8">
+        <a href="#" class="block overflow-hidden rounded-2xl">
+          <img
+            alt="Office"
+            src="{% static 'img/transmission.jpg' %}"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="bg-gray-900 p-4 h-40">
+            <h3 class="text-sm text-white">Ремонт трансмиссии</h3>
+
+            <p class="mt-1 text-xs text-gray-300">
+              Демонтаж КПП и других узлов трансмиссии со стоящего на подъемнике
+              или эстакаде автомобиля, разборка и промывка, сборка и установка
+              на места отремонтированных узлов.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
     <div style="position: relative; overflow: hidden">
       <iframe
         src="https://yandex.ru/map-widget/v1/-/CCUVVVafsD"
