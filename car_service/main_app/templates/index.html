@@ -215,11 +215,34 @@
         style="position: relative"
       ></iframe>
     </div>
-    <div id="repair_owner" class="flex bg-gray-900 p-8 my-1">
-      <p class="mt-1 text-center text-lg text-gray-300">
-        Квашенников Валерий Васильевич +7900000... ('иконка телефона со ссылкой
-        для звонка')
-      </p>
+    <div
+      id="repair_owner"
+      class="flex justify-center bg-gray-900 p-8 my-1 space-x-2"
+    >
+      <div class="md:text-lg text-sm text-gray-300">
+        <table>
+          {% for contact in owner %}
+          <tr>
+            <td class="px-3">
+              <p>{{ contact.contact_name }}</p>
+            </td>
+            <td class="px-3">
+              <a
+                class="ease-in-out duration-200 hover:text-xl"
+                href="tel:{{ contact.phone_number }}"
+                >{{ contact.phone_number }}</a
+              >
+            </td>
+            <td class="px-3">
+              <img
+                class="h-7 inline-block"
+                src="{% static 'img/icon_phone.png' %}"
+              />
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
     </div>
   </body>
 </html>
