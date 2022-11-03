@@ -12,3 +12,14 @@ class Owner(models.Model):
 
     def __str__(self):
         return f"{self.phone_number}"
+
+
+class Feedback(models.Model):
+    feedback_text = models.TextField(verbose_name="Отзыв")
+
+    class Meta:
+        verbose_name = "Отзыв"
+        verbose_name_plural = "Отзывы"
+
+    def __str__(self):
+        return f"{self.feedback_text}"

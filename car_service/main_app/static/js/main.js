@@ -4,6 +4,7 @@ function ready() {
       left: 0,
       top: element.offsetTop,
       behavior: "smooth",
+      block: "center",
     });
   }
 
@@ -15,6 +16,9 @@ function ready() {
   });
   document.querySelector("#button_owner").addEventListener("click", () => {
     scrollTo(document.querySelector("#repair_owner"));
+  });
+  document.querySelector("#button_feedback").addEventListener("click", () => {
+    scrollTo(document.querySelector("#repair_feedback"));
   });
 }
 
