@@ -1,5 +1,6 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+import datetime
 
 
 class Owner(models.Model):
@@ -16,6 +17,7 @@ class Owner(models.Model):
 
 class Feedback(models.Model):
     feedback_text = models.TextField(verbose_name="Отзыв")
+    date_create = models.DateTimeField(verbose_name="Дата создания", default=datetime.datetime.now)
 
     class Meta:
         verbose_name = "Отзыв"
