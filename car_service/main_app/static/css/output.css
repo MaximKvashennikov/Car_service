@@ -885,6 +885,10 @@ input:checked + .toggle-bg {
   visibility: hidden;
 }
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1320,16 +1324,16 @@ input:checked + .toggle-bg {
   width: 1rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .flex-1 {
@@ -1418,6 +1422,10 @@ input:checked + .toggle-bg {
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -1622,6 +1630,38 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\"\/static\/img\/sample\.jpeg\"\)\] {
+  background-image: url("/static/img/sample.jpeg");
+}
+
+.bg-\[url\(\'\/static\/img\/sample\.jpeg\'\)\] {
+  background-image: url('/static/img/sample.jpeg');
+}
+
+.bg-\[url\(\'\/static\/img\/header\.jpg\'\)\] {
+  background-image: url('/static/img/header.jpg');
+}
+
+.bg-\[url\(\'\/static\/img\/headerImage\.jpg\'\)\] {
+  background-image: url('/static/img/headerImage.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1629,6 +1669,10 @@ input:checked + .toggle-bg {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-24 {
+  padding: 6rem;
 }
 
 .p-8 {
@@ -1645,6 +1689,14 @@ input:checked + .toggle-bg {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .py-4 {
@@ -1773,6 +1825,10 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1791,6 +1847,14 @@ input:checked + .toggle-bg {
 
 .leading-9 {
   line-height: 2.25rem;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 
 .text-white {
@@ -2311,6 +2375,10 @@ input:checked + .toggle-bg {
     justify-content: space-between;
   }
 
+  .md\:p-24 {
+    padding: 6rem;
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2318,6 +2386,11 @@ input:checked + .toggle-bg {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-lg {
