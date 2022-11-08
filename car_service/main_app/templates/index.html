@@ -82,12 +82,14 @@
         </li>
       </ul>
     </nav>
-    <div>
-      <div class="flex items-center bg-no-repeat bg-left bg-cover bg-[url('/static/img/headerImage.jpg')]">
-        <h1 class="text-white p-16 md:p-24 font-black text-lg md:text-3xl max-w-4xl mx-auto">
-          Выполним качественный ремонт и восстановим ваш автомобиль.
-        </h1>
-      </div>
+    <div
+      class="flex items-center bg-no-repeat bg-left bg-cover bg-[url('/static/img/headerImage.jpg')]"
+    >
+      <h1
+        class="text-white p-16 md:p-24 font-black text-lg md:text-3xl max-w-4xl mx-auto"
+      >
+        Выполним качественный ремонт и восстановим ваш автомобиль.
+      </h1>
     </div>
     <div id="repair_services" class="flex flex-wrap bg-gray-200">
       <div class="max-w-md mx-auto p-8">
@@ -337,7 +339,7 @@
         class="mb-4 mt-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600"
       >
         <div class="py-4 px-4 bg-white rounded-t-lg dark:bg-gray-800">
-          <label for="comment" class="sr-only">Отзыв</label>
+          <label for="repair_feedback" class="sr-only">Отзыв</label>
           {{form.feedback_text}}
         </div>
         <div
@@ -383,7 +385,7 @@
       <div class="absolute left-0 bottom-2">
         <a
           href="{% url 'admin:index' %}"
-          class="transition-all ease-in duration-500 bg-transparent text-transparent hover:text-white px-1 py-1 hover:border hover:border-white rounded"
+          class="opacity-25 transition-all ease-in duration-500 bg-transparent text-transparent hover:text-white px-1 py-1 hover:border hover:border-white rounded"
         >
           Admin
         </a>
