@@ -2297,6 +2297,12 @@ body {
   --tw-ring-color: rgb(31 41 55 / 0.7);
 }
 
+@media (min-width: 640px) {
+  .sm\:h-40 {
+    height: 10rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:static {
     position: static;
@@ -2321,6 +2327,10 @@ body {
 
   .md\:h-\[460px\] {
     height: 460px;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
   }
 
   .md\:w-auto {
