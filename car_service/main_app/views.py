@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Owner, Feedback
 from .forms import FeedbackForm
+from django.contrib import messages
 
 
 def homepage(request):
@@ -13,6 +14,7 @@ def homepage(request):
         if form.is_valid():
             delete_old_feedback()
             form.save()
+            messages.success(request, 'Success')
             return redirect('/')
 
     data = {

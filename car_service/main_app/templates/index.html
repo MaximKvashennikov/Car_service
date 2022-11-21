@@ -6,8 +6,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Автосервис Garage Service</title>
-    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="{% static 'img/favicon-32x32.png' %}"/>
+    <link
+      rel="icon"
+      href="{% static 'img/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="{% static 'img/favicon-32x32.png' %}"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -356,6 +363,7 @@
         </div>
       </div>
     </form>
+    {% include "pop_up.html" %}
     <div
       id="repair_owner"
       class="relative flex justify-center bg-gray-900 p-8 my-1 space-x-2"
